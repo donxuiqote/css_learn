@@ -1,11 +1,12 @@
 body{
     padding: 0;
     background-color: #000000;
+
 }
 .canvas{
     margin: auto;
-    width: 600px;
-    height: 500px;
+    max-width: 600px;
+    transform: translate(0, 25%);
 }
 .a{
     width: 100px;
@@ -29,13 +30,15 @@ body{
 
 .a:nth-child(2), .a:nth-child(3) div, .a:nth-child(5), 
 .a:nth-child(8), .a:nth-child(10), .a:nth-child(11), 
-.a:nth-child(13) div, .a:nth-child(15) div, .a:nth-child(16) div, .a:nth-child(18) div{
+.a:nth-child(13) div, .a:nth-child(15) div, .a:nth-child(16) div,
+.a:nth-child(18) div, .a:nth-child(29), .a:nth-child(30) div{
     background-color: rgb(255, 246, 72);
 }
 
 .a:nth-child(3), .a:nth-child(5) div, .a:nth-child(6) div, 
 .a:nth-child(7) div, .a:nth-child(14) div, .a:nth-child(19) div,
-.a:nth-child(22), .a:nth-child(25) div, .a:nth-child(26) div, .a:nth-child(28) {
+.a:nth-child(22), .a:nth-child(25) div, .a:nth-child(26) div,
+.a:nth-child(28), .a:nth-child(29) div, .a:nth-child(30){
     background-color: rgb(242, 50, 16);
 }
 
@@ -92,7 +95,7 @@ body{
     border-radius: 300px 0 0 0;
 }
 
-.a:nth-child(9) div{
+.a:nth-child(9) div, .a:nth-child(30) div{
     width: 50px;
     height: 100px;
     border-radius: 300px 0 0 300px;
@@ -114,4 +117,12 @@ body{
 .a:nth-child(17) div, .a:nth-child(26) div {
     width: 50px;
     height: 100px;
+}
+
+.a:nth-child(29) div{
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid rgb(255, 246, 72);
+    border-left: 0px solid transparent;
+    border-bottom: 100px solid transparent;
 }
